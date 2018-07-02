@@ -10,7 +10,7 @@
 
 # Grab a known good release of debootstrap
 #debootstrap_version="1.0.101"
-debootstrap_version="1.0.100~bpo9+1" # Latest stretch-backports version listed at: https://packages.debian.org/search?keywords=debootstrap
+debootstrap_version="1.0.104" # Try buster (testing) version listed at: https://packages.debian.org/search?keywords=debootstrap
 
 echo "Downloading debootstrap ${debootstrap_version}..." 1>&2
 if [ "${debootstrap_version}" = "HEAD" ]; then
