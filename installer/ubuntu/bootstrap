@@ -20,7 +20,7 @@ else
     d="${base}/debootstrap_${debootstrap_version}.tar.gz"
 fi
 
-if ! curl --verbose -f -# -L --connect-timeout 60 --retry 2 "$d" \
+if ! curl --verbose -L --connect-timeout 60 --retry 2 "$d" \
         | tar -C "$tmp" --strip-components=1 -zx 2>/dev/null; then
     error 1 'Failed to download debootstrap.
 Check your internet connection or proxy settings and try again.'
